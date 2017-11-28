@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SorteadorJogos</string>
+    <string name="app_name">Sorteador para Jogos</string>
+    <string name="jogar_dados">Jogar Dados</string>
+    <string name="cronometro_xadrez">Cronômetro Xadrez</string>
+    <string name="marcador_tempo">Marcador Tempo</string>
+    <string name="roleta">Roleta</string>
 </resources>
