@@ -1,16 +1,18 @@
 package br.edu.ifspsaocarlos.sdm.sorteadorjogos;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PrincipalActivity extends AppCompatActivity implements View.OnClickListener{
+public class PrincipalActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnDados;
     private Button btnXadrez;
     private Button btnCronometro;
     private Button btnRoleta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,19 @@ public class PrincipalActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View view) {
-
+        Intent proximaTela;
+        if(view == btnDados) {
+            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+            startActivity(proximaTela);
+        } else if (view == btnXadrez) {
+            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+            startActivity(proximaTela);
+        } else if (view == btnCronometro) {
+            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+            startActivity(proximaTela);
+        } else if (view == btnRoleta) {
+            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+            startActivity(proximaTela);
+        }
     }
 }
