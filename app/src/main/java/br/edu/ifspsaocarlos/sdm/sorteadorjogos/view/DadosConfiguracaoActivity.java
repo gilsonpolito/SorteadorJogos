@@ -1,4 +1,4 @@
-package br.edu.ifspsaocarlos.sdm.sorteadorjogos;
+package br.edu.ifspsaocarlos.sdm.sorteadorjogos.view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import br.edu.ifspsaocarlos.sdm.sorteadorjogos.R;
 
 public class DadosConfiguracaoActivity extends AppCompatActivity implements View.OnClickListener {
 

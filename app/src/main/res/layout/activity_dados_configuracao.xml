@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.edu.ifspsaocarlos.sdm.sorteadorjogos.DadosConfiguracaoActivity">
+    tools:context="br.edu.ifspsaocarlos.sdm.sorteadorjogos.view.DadosConfiguracaoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,8 @@
         <EditText
             android:id="@+id/et_qtdeDados"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number" />
 
         <TextView
             android:layout_width="match_parent"
@@ -29,12 +30,13 @@
         <EditText
             android:id="@+id/et_qtdeFaces"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number" />
 
         <Button
+            android:id="@+id/btn_ok"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_ok"
             android:text="@string/ok" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
