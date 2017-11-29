@@ -10,4 +10,8 @@
     <string name="jogador_1">Jogador 1</string>
     <string name="jogar">Jogar</string>
     <string name="jogador_2">Jogador 2</string>
+    <string name="parar_contagem">Parar Contagem</string>
+    <string name="iniciar_contagem">Iniciar Contagem</string>
+    <string name="contagem_regressiva">Contagem regressiva</string>
+    <string name="cronometro">Cronômetro</string>
 </resources>

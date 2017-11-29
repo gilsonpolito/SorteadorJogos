@@ -32,7 +32,8 @@ public class XadrezActivity extends AppCompatActivity implements View.OnClickLis
         chJogador1 = (Chronometer) findViewById(R.id.ch_jogador_1);
         chJogador2 = (Chronometer) findViewById(R.id.ch_jogador_2);
 
-        tempoJogador1 = tempoJogador2 = 0;
+        tempoJogador1 = 0;
+        tempoJogador2 = 0;
     }
 
     @Override

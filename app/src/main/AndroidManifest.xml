@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".view.DadosConfiguracaoActivity" />
         <activity android:name=".view.DadosActivity" />
-        <activity android:name=".view.XadrezActivity"></activity>
+        <activity android:name=".view.XadrezActivity" />
+        <activity android:name=".view.CronometroActivity"></activity>
     </application>
 
 </manifest>

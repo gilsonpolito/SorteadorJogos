@@ -34,18 +34,23 @@ public class PrincipalActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         Intent proximaTela;
-        if(view == btnDados) {
-            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
-            startActivity(proximaTela);
-        } else if (view == btnXadrez) {
-            proximaTela = new Intent(this, XadrezActivity.class);
-            startActivity(proximaTela);
-        } else if (view == btnCronometro) {
-            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
-            startActivity(proximaTela);
-        } else if (view == btnRoleta) {
-            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
-            startActivity(proximaTela);
+        switch (view.getId()) {
+            case R.id.btn_jogar_dados:
+                proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+                startActivity(proximaTela);
+                break;
+            case R.id.btn_cronometro_xadrez:
+                proximaTela = new Intent(this, XadrezActivity.class);
+                startActivity(proximaTela);
+                break;
+            case R.id.btn_marcador_tempo:
+                proximaTela = new Intent(this, CronometroActivity.class);
+                startActivity(proximaTela);
+                break;
+            case R.id.btn_roleta:
+                proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+                startActivity(proximaTela);
+                break;
         }
     }
 }
