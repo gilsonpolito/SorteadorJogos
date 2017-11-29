@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.DadosConfiguracaoActivity" />
-        <activity android:name=".view.DadosActivity"></activity>
+        <activity android:name=".view.DadosActivity" />
+        <activity android:name=".view.XadrezActivity"></activity>
     </application>
 
 </manifest>

@@ -38,7 +38,7 @@ public class PrincipalActivity extends AppCompatActivity implements View.OnClick
             proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
             startActivity(proximaTela);
         } else if (view == btnXadrez) {
-            proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+            proximaTela = new Intent(this, XadrezActivity.class);
             startActivity(proximaTela);
         } else if (view == btnCronometro) {
             proximaTela = new Intent(this, DadosConfiguracaoActivity.class);

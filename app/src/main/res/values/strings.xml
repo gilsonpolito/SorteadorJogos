@@ -7,5 +7,7 @@
     <string name="qtde_dados">Quantidade de dados:</string>
     <string name="qtde_faces">Qauntidade de faces:</string>
     <string name="ok">OK</string>
+    <string name="jogador_1">Jogador 1</string>
     <string name="jogar">Jogar</string>
+    <string name="jogador_2">Jogador 2</string>
 </resources>
