@@ -42,11 +42,15 @@ public class XadrezActivity extends AppCompatActivity implements View.OnClickLis
             tempoJogador2 = chJogador2.getBase() - SystemClock.elapsedRealtime();
             chJogador2.stop();
             chJogador1.setBase(SystemClock.elapsedRealtime() + tempoJogador1);
+            btnJogador2.setEnabled(true);
+            btnJogador1.setEnabled(false);
             chJogador1.start();
         } else if (view == btnJogador2) {
             tempoJogador1 = chJogador1.getBase() - SystemClock.elapsedRealtime();
             chJogador1.stop();
             chJogador2.setBase(SystemClock.elapsedRealtime() + tempoJogador2);
+            btnJogador2.setEnabled(false);
+            btnJogador1.setEnabled(true);
             chJogador2.start();
         }
     }

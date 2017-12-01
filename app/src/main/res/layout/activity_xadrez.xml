@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/verde_fundo"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,18 +19,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:textColor="@color/amarelo_texto"
                 android:text="@string/jogador_1" />
 
             <Chronometer
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:textColor="@color/amarelo_texto"
                 android:id="@+id/ch_jogador_1" />
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_jogador_1"
-                android:text="@string/jogar" />
+                android:background="@drawable/push_button"/>
         </LinearLayout>
 
         <LinearLayout
@@ -41,18 +46,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:textColor="@color/amarelo_texto"
                 android:text="@string/jogador_2" />
 
             <Chronometer
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:textColor="@color/amarelo_texto"
                 android:id="@+id/ch_jogador_2"/>
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_jogador_2"
-                android:text="@string/jogar" />
+                android:background="@drawable/push_button"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -4,35 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/verde"
+    android:background="@color/verde_fundo"
     android:orientation="vertical"
     tools:context="br.edu.ifspsaocarlos.sdm.sorteadorjogos.view.DadosConfiguracaoActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/amarelo_texto"
         android:text="@string/qtde_dados" />
 
     <EditText
         android:id="@+id/et_qtdeDados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/amarelo_texto"
         android:inputType="number" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/amarelo_texto"
         android:text="@string/qtde_faces" />
 
     <EditText
         android:id="@+id/et_qtdeFaces"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/amarelo_texto"
         android:inputType="number" />
 
     <Button
         android:id="@+id/btn_ok"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ok" />
+        android:background="@drawable/proximo"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
