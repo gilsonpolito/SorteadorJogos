@@ -48,7 +48,7 @@ public class PrincipalActivity extends AppCompatActivity implements View.OnClick
                 startActivity(proximaTela);
                 break;
             case R.id.btn_roleta:
-                proximaTela = new Intent(this, DadosConfiguracaoActivity.class);
+                proximaTela = new Intent(this, RoletaActivity.class);
                 startActivity(proximaTela);
                 break;
         }

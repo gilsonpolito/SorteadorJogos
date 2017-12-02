@@ -12,13 +12,15 @@
         <activity android:name=".view.PrincipalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".view.DadosConfiguracaoActivity" />
         <activity android:name=".view.DadosActivity" />
         <activity android:name=".view.XadrezActivity" />
-        <activity android:name=".view.CronometroActivity"></activity>
+        <activity android:name=".view.CronometroActivity" />
+        <activity android:name=".view.RoletaActivity"></activity>
     </application>
 
 </manifest>

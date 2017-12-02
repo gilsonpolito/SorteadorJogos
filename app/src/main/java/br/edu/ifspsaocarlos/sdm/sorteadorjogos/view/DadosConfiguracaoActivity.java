@@ -38,6 +38,7 @@ public class DadosConfiguracaoActivity extends AppCompatActivity implements View
             dadosIntent.putExtra(QTDE_DADOS, qtdeDados);
             dadosIntent.putExtra(QTDE_FACES, qtdeFaces);
             startActivity(dadosIntent);
+            finish();
         }
     }
 }
