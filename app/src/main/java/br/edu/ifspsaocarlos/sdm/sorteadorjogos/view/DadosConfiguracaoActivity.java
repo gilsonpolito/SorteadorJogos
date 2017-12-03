@@ -35,9 +35,11 @@ public class DadosConfiguracaoActivity extends AppCompatActivity implements View
             Intent dadosIntent = new Intent(this, DadosActivity.class);
             int qtdeDados = Integer.parseInt(etQuantidadeDados.getText().toString());
             int qtdeFaces = Integer.parseInt(etQuantidadeFaces.getText().toString());
+            //Passagem de parâmetros para a Intent responsável em realizar as jogadas
             dadosIntent.putExtra(QTDE_DADOS, qtdeDados);
             dadosIntent.putExtra(QTDE_FACES, qtdeFaces);
             startActivity(dadosIntent);
+            //ao voltar retorna a Activity principal, sem necessidade de voltar a tela de parâmetros
             finish();
         }
     }

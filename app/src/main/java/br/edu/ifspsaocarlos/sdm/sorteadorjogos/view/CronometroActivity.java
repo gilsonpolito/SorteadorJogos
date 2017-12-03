@@ -25,7 +25,7 @@ public class CronometroActivity extends AppCompatActivity implements View.OnClic
     private NumberPicker npSegundo;
     private TextView tvTempo;
     private CountDownTimer timer;
-    private long inicial = 0;
+    private long tempoInicial = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,10 +80,10 @@ public class CronometroActivity extends AppCompatActivity implements View.OnClic
                     btIniciarContagem.setEnabled(false);
                     switch (selecaoContagem) {
                         case R.id.rb_cronometro:
-                            inicial = new Date().getTime();
+                            tempoInicial = new Date().getTime();
                             timer = new CountDownTimer(tempoEmMilis, 1) {
                                 public void onTick(long millisUntilFinished) {
-                                    atualizarTempo(new Date().getTime() - inicial);
+                                    atualizarTempo(new Date().getTime() - tempoInicial);
                                 }
 
                                 public void onFinish() {

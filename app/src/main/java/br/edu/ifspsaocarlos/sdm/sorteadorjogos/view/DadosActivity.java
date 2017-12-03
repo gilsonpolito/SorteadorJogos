@@ -19,6 +19,7 @@ public class DadosActivity extends AppCompatActivity implements View.OnClickList
     private int getQtdeFaces;
     private TextView tvResultado;
     private TextView tvDados;
+    private Dado dado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,8 @@ public class DadosActivity extends AppCompatActivity implements View.OnClickList
         btnJogar = (Button) findViewById(R.id.btn_jogar);
         btnJogar.setOnClickListener(this);
 
+        //objeto responsável em realizar os sorteios
+        dado = new Dado(getQtdeFaces);
     }
 
     @Override
@@ -40,8 +43,9 @@ public class DadosActivity extends AppCompatActivity implements View.OnClickList
         if (view == btnJogar) {
             int resultadoGeral = 0;
             int resultado = 0;
-            Dado dado = new Dado(getQtdeFaces);
+            //variável responsável em armazenar os números sorteados para informar ao usuário
             StringBuilder sbTexto = new StringBuilder("Sorteio(s): ");
+            //realiza o sorteio baseado na quantidade de dados desejada
             for (int i = 1; i <= qtdeDados; i++) {
                 resultado = dado.jogar();
                 resultadoGeral += resultado;

@@ -24,6 +24,7 @@ public class RoletaActivity extends AppCompatActivity implements View.OnClickLis
         btJogar.setOnClickListener(this);
         tvResultado = (TextView) findViewById(R.id.tv_resultado);
 
+        //roleta vai até o número 36
         dado = new Dado(36);
     }
 
